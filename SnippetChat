@@ -42,7 +42,14 @@
             "value": "ORIGEN WEB TEST",
             "transcriptFields":[ "WebOrigen__c" ],
             "displayToAgent": true
-		}];
+			},
+			{
+			"label": "Centro Educativo relacionado (cód. MEC)",
+            "value": "12345",
+            "transcriptFields":[ "CodigoMEC__c" ],
+            "displayToAgent": true
+			}
+		];
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
