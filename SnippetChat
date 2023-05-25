@@ -9,7 +9,7 @@
 <p>My first paragraph.</p>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #FFDE00;
+		background-color: #FFEEBA;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
