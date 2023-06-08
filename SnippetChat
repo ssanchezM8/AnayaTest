@@ -44,15 +44,21 @@
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 		embedded_svc.settings.extraPrechatFormDetails = [{
 			"label": "Web Origen",
-            "value": "ORIGEN WEB TEST",
-            "transcriptFields":[ "WebOrigen__c" ],
-            "displayToAgent": true
+            		"value": "ORIGEN WEB TEST",
+            		"transcriptFields":[ "WebOrigen__c" ],
+            		"displayToAgent": true
 			},
 			{
 			"label": "Centro Educativo relacionado (cód. MEC)",
-            "value": "12345",
-            "transcriptFields":[ "CodigoMEC__c" ],
-            "displayToAgent": true
+			"value": "12345",
+			"transcriptFields":[ "CodigoMEC__c" ],
+			"displayToAgent": true
+			},
+			{
+			"label": "Acepta GDPR Aux",
+			"value": "true",
+			"transcriptFields":[ "AceptaGDPRAux__c" ],
+			"displayToAgent": true
 			}
 		];
 
