@@ -34,19 +34,11 @@
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
 			// Returns a valid button ID.
 		//};
-		embedded_svc.settings.prepopulatedPrechatFields = [{
+		embedded_svc.settings.prepopulatedPrechatFields = {
 			 FirstName: 'John',
 		    	 LastName: 'Doe',
 		    	 Email: 'john.doe@salesforce.com'		
-			},
-			{
-			"label": "Acepta GDPR Aux",
-			"value": "true",
-			"transcriptFields":[ "AceptaGDPRAux__c" ],
-			"displayToAgent": true
-			}
-			
-			];
+		}; //Sets the auto-population of pre-chat form fields
 		
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
@@ -60,6 +52,12 @@
 			"label": "Centro Educativo relacionado (cód. MEC)",
 			"value": "12345",
 			"transcriptFields":[ "CodigoMEC__c" ],
+			"displayToAgent": true
+			},
+			{
+			"label": "Acepta GDPR Aux",
+			"value": "true",
+			"transcriptFields":[ "AceptaGDPRAux__c" ],
 			"displayToAgent": true
 			}
 		];
