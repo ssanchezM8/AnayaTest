@@ -61,6 +61,17 @@
 			"displayToAgent": true
 			}
 		];
+		
+		embedded_svc.settings.extraPrechatInfo = [{
+		  "entityFieldMaps": [{
+		    "doCreate":true,
+		    "doFind":true,
+		    "fieldName":"Email",
+		    "isExactMatch":true,
+		    "label":"Email"
+		  }],
+		  "entityName":"Contact"
+		}];
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
