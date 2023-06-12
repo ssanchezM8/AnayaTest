@@ -63,15 +63,32 @@
 		];
 		
 		embedded_svc.settings.extraPrechatInfo = [{
-		  "entityFieldMaps": [{
-		    "doCreate":true,
-		    "doFind":true,
-		    "fieldName":"Email",
-		    "isExactMatch":true,
-		    "label":"Email"
-		  }],
-		  "entityName":"Contact"
-		}];
+		      "entityFieldMaps": [{
+			"doCreate": true,
+			"doFind": false,
+			"fieldName": "LastName",
+			"isExactMatch": false,
+			"label": "Last Name",
+		    "readOnly": true
+		      }, {
+			"doCreate": true,
+			"doFind": false,
+			"fieldName": "FirstName",
+			"isExactMatch": false,
+			"label": "First Name",
+		    "readOnly": true
+		      }, {
+			"doCreate": true,
+			"doFind": true,
+			"fieldName": "Email",
+			"isExactMatch": true,
+			"label": "Email",
+		    "readOnly": true
+		      }],
+		      "entityName": "Contact",
+		      "saveToTranscript": "Contact",
+		      "showOnCreate": true
+		  }];
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
