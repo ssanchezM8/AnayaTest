@@ -81,6 +81,17 @@
 			}
 		);
 	};
+	
+	embedded_svc.settings.extraPrechatInfo = [{
+	  "entityFieldMaps": [{
+	    "doCreate":true,
+	    "doFind":true,
+	    "fieldName":"Email",
+	    "isExactMatch":true,
+	    "label":"Email"
+	  }],
+	  "entityName":"Contact"
+	}];
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
