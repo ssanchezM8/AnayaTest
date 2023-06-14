@@ -59,6 +59,12 @@
 			"value": "true",
 			"transcriptFields":[ "AceptaGDPRAux__c" ],
 			"displayToAgent": true
+			},
+			{
+			"label": "Web Privada",
+			"value": "true",
+			"transcriptFields":[ "WebPrivada__c" ],
+			"displayToAgent": true
 			}
 		];
 		
